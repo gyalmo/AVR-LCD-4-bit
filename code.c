@@ -9,8 +9,8 @@ int main(void)
   cmd(0x28);
   cmd(0x0f);
   cmd(0x80);
-  unsigned char line_1[]="AVR MC";
-  unsigned char line_2[]="Programming";
+  unsigned char line_1[]="ABC DE";
+  unsigned char line_2[]="abcdefghijk";
   for(unsigned int i=0,j=0;line_1[i]!='\0'||line_2[j]!='\0';) 
     { if(line_1[i]!='\0') 
        { cmd(0x85+i);
